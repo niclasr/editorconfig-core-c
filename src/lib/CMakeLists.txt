@@ -58,7 +58,7 @@ endif()
 target_link_libraries(editorconfig_static ${PCRE_LIBRARIES})
 
 install(TARGETS editorconfig_shared editorconfig_static
-    RUNTIME DESTINATION bin
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib)
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
